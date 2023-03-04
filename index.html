@@ -12,15 +12,35 @@
     <main>
         <section id="login">
             <div id="imagem">
-                foto
+                <picture>
+                    <img src="imagens/pexels-scott-webb-1544943.jpg" alt="">
+                </picture>
             </div>
             <div id="formulario">
                 <h1>Login</h1>
                 <p>Seja bem vindo(a) novamente, faça login para acessar sua conta
                     e poder fazer as configurações.</p>
             </div>
-        </section><form action="login.php" method="post">
-            
+        </section>
+        <form action="login.php" method="post">
+                
+            <p class="inpu">
+                <label for="email1"></label>
+                 <input type="email" name="email" id="email1"
+                size="26" placeholder="seu e-mail">
+            </p>
+        
+            <p class="inpu">
+                <label for="senha"></label>
+                <input type="password" name="senha" id="senha1"
+                size="26" placeholder="sua senha">
+            </p>
+            <p class="entrar">
+                <button type="button" value="Entrar">
+                Entrar    
+                </button>      
+            </p>
+
         </form>
     </main>
     
