@@ -38,6 +38,11 @@ div > h1 {
     text-align: center;
 }
 
+div#imagem {
+    display: flex;
+    justify-content: right ;
+}
+
 img {
     width: 250px;
     height: 200px;
@@ -47,25 +52,46 @@ img {
     
 }
 
-p.inpu {
-   
-    background-color: #5f2c82;
-    border-radius: 5px;
-    padding: 10px;
-    
-    
-   
-}
-
-th {
-    background-color: #5f2c82;
-    margin: 20px;
-}
-
 input {
-    width: 200px;
-    background-color: #49a09d;
+    width: 175px;
+    display: flex;
+    background-color: #81c7c5;
     border: 1px solid  #49a09d;
-    border-radius: 2px;
+    border-radius: 10px;
     padding: 10px;
+    margin-left: 16px;
+    
+}
+
+.test {
+    width: 235px;
+    height: 35px;
+    display: flex;
+    background-color: #5f2c82;
+    padding: 3px;
+    margin: 3px ;
+    padding-right: 4px;
+    border-radius: 10px;
+    
+} 
+
+.test2 {
+    display: flex;
+    justify-content: right;
+}
+
+input#entrar {
+    width: 240px;
+    display: flex;
+    justify-content: center;
+    margin: 3px;
+}
+
+#esquecisenha {
+    width: 240px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    text-align: center;
+    margin: 3px;
 }
