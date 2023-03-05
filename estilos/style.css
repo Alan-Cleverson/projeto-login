@@ -5,7 +5,9 @@ Paleta de cores
 Verde: #49a09d
 roxo: #5f2c82
 */
-
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 body, html {
     background-color: #5f2c82;
@@ -16,10 +18,15 @@ main{
     width: 250px;
     height: 515px;
     background-color: white;
-    border: 1px solid black;
+    border: 1px solid #49a09d;
     border-radius: 12px ;
+    box-shadow: 1px 1px 2px #49a09d;
     margin: auto;
     
+}
+
+div {
+    font-size: 0.8em;
 }
 
 div#formulario {
@@ -41,19 +48,24 @@ img {
 }
 
 p.inpu {
-    height: 19px;
+   
     background-color: #5f2c82;
     border-radius: 5px;
     padding: 10px;
     
-
+    
+   
 }
 
-button {
-    width: 226px;
+th {
+    background-color: #5f2c82;
+    margin: 20px;
+}
+
+input {
+    width: 200px;
     background-color: #49a09d;
     border: 1px solid  #49a09d;
     border-radius: 2px;
     padding: 10px;
-    margin: ;
 }

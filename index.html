@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
 </head>
 <body>
 
@@ -18,29 +20,39 @@
             </div>
             <div id="formulario">
                 <h1>Login</h1>
-                <p>Seja bem vindo(a) novamente, faça login para acessar sua conta
-                    e poder fazer as configurações.</p>
+                <p>Seja bem vindo(a) novamente. Faça login para acessar sua conta
+                    e poder fazer as configurações no seu ambiente.</p>
             </div>
         </section>
         <form action="login.php" method="post">
                 
-            <p class="inpu">
-                <label for="email1"></label>
-                 <input type="email" name="email" id="email1"
-                size="26" placeholder="seu e-mail">
-            </p>
-        
-            <p class="inpu">
-                <label for="senha"></label>
-                <input type="password" name="senha" id="senha1"
-                size="26" placeholder="sua senha">
-            </p>
-            <p class="entrar">
-                <button type="button" value="Entrar">
-                Entrar    
-                </button>      
-            </p>
-
+            <tr>
+            
+                <th id="email">
+                    </span>
+                    <p class="inpu" id="email">
+                        <span class="material-symbols-outlined">person</span>
+                        <label for="email1"></label>
+                         <input type="email" name="email" id="email1"
+                        size="26" placeholder="seu e-mail">
+                    </p>
+                </th>
+               
+                <th id="senha">
+                    <p class="inpu" >
+                        <span class="material-symbols-outlined">lock_person</span>
+                        <label for="senha"></label>
+                        <input type="password" name="senha" id="senha1"
+                        size="26" placeholder="sua senha">
+                    </p>
+                </th>
+                <th>
+                    <p class="entrar">
+                        <input id="entrar" type="button" value="Entrar"></input>
+                    </p>
+                </th>
+            </tr>
+            
         </form>
     </main>
     
