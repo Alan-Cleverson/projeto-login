@@ -95,3 +95,9 @@ input#entrar {
     text-align: center;
     margin: 3px;
 }
+
+.rdpe {
+    text-align: right;
+    font-size: .8em;
+    font-weight: bolder;
+}
