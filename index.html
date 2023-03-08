@@ -14,61 +14,44 @@
     <main>
         <section id="login">
             <div id="imagem">
+               <!-- Aqui vai a imagem no css-->
+            </div>
+            <div id="formulario">
+                <h1>Login</h1>
+                    <p>Seja bem vindo(a) novamente. Faça login para acessar sua conta
+                     e poder fazer as configurações no seu ambiente.</p>
+                    
+                <form action="login.php" method="post">                  
+                        
                 
-                    <img src="imagens/pexels-scott-webb-1544943.jpg" alt="">
+                    <div class="campo">
+                        <span class="material-symbols-outlined">person</span>
+                        
+                        <input type="email" name="login" id="login1"
+                        size="26" placeholder="seu e-mail" autocapitalize="email"
+                        required maxlength="30">
+                        <label for="login1">login</label>
+                    </div>
+                                      
                 
+                    <div class="campo">
+                        <span class="material-symbols-outlined">key</span>
+                        
+                        <input type="password" name="senha" id="senha1"
+                        size="26" placeholder="sua senha" required minlength="4"
+                        maxlength="10">
+                        <label for="senha1">senha</label>
+                    </div>
+                
+                
+                  
+                        <input id="botao" class="entrar" type="submit" value="Entrar"></input>
+                       
+                            <a href="@">Esqueci a senha<span class="material-symbols-outlined">mail</span></a>
+                        
+                </form>
             </div>
         </section>
-        <form action="login.php" method="post">
-
-        <tr>
-            <th>
-                <div id="formulario">
-                        <h1>Login</h1>
-                        <p>Seja bem vindo(a) novamente. Faça login para acessar sua conta
-                            e poder fazer as configurações no seu ambiente.</p>
-                    </div>
-            </th>
-            
-            
-                <th>
-                    
-                        <div class="test">
-                            <span class="material-symbols-outlined">person</span>
-                            
-                            <label for="email1"></label>
-                            <input type="email" name="email" id="email1"
-                            size="26" placeholder="seu e-mail">
-                            
-                        </div>
-                    
-                </th>
-            
-                <th>
-                    
-                        <div class="test">
-                            
-                            <span class="material-symbols-outlined">lock_person</span>
-                            <label for="senha"></label>
-                            <input type="password" name="senha" id="senha1"
-                            size="26" placeholder="sua senha">
-                        
-                        </div>
-                    
-                </th>
-                <th>
-                        <div >
-                            <input id="entrar" type="submit" value="Entrar"></input>
-                            <input id="esquecisenha" type="submit" value="Esqueci a senha">
-                        </div>
-                    
-                </th>
-                
-        </tr>
-        </form>
     </main>
-    <footer>
-        <p class="rdpe"><em>...Alan Cleverson...</em></p>
-    </footer>
 </body>
 </html>

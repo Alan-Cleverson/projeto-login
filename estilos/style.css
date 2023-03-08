@@ -1,107 +1,140 @@
 @charset "UTF-8";
 
-/* 
-Paleta de cores
-Verde: #49a09d
-roxo: #5f2c82
-*/
+/* Paleta de cores
+verde: #49a09d
+lilas: #5f2c82 */
+
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
 }
 
 body, html {
     background-color: #5f2c82;
-    padding-top: 5px;
+    height: 100vh;
+    width: 100vw;
 }
 
-main{
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;   
+}
+
+section#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+
+
+    background-color: white;
     width: 250px;
     height: 515px;
-    background-color: white;
-    border: 1px solid #49a09d;
-    border-radius: 12px ;
-    box-shadow: 1px 1px 2px #49a09d;
-    margin: auto;
-    
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.473);
+
+    transition: width .3s height .3s;
+    transition-timing-function: ease;
+
 }
 
-div {
-    font-size: 0.8em;
-}
-
-div#formulario {
-    padding-right: 10px;
-    padding-left: 10px;
-}
-
-div > h1 {
-    text-align: center;
-}
-
-div#imagem {
-    display: flex;
-    justify-content: right ;
-}
-
-img {
-    width: 250px;
+section#login > div#imagem {
+    display: block;
+    background: #5f2c82 url(../imagens/pexels-scott-webb-1544943.jpg) no-repeat;
     height: 200px;
-    text-align: center;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    
+    background-size: cover;
+    background-position: right bottom;
+
 }
 
-input {
-    width: 175px;
-    display: flex;
-    background-color: #8fc7c5;
-    border: 1px solid  #49a09d;
-    border-radius: 10px;
+section#login > div#formulario {
+    display: block;
     padding: 10px;
-    margin-left: 16px;
-    
+
+
 }
 
-input:hover {
-    background-color: white;
-}
-
-.test {
-    width: 235px;
-    height: 35px;
-    display: flex;
-    background-color: #5f2c82;
-    padding: 3px;
-    margin: 3px ;
-    padding-right: 4px;
-    border-radius: 10px;
-    
-} 
-
-.test2 {
-    display: flex;
-    justify-content: right;
-}
-
-input#entrar {
-    width: 240px;
-    display: flex;
-    justify-content: center;
-    margin: 3px;
-}
-
-#esquecisenha {
-    width: 240px;
-    display: flex;
-    justify-content: center;
-    background-color: white;
+div#formulario >h1 {
     text-align: center;
-    margin: 3px;
+    margin-bottom: 10px;
 }
 
-.rdpe {
-    text-align: right;
+div#formulario > p {
     font-size: .8em;
-    font-weight: bolder;
+}
+    
+form > div.campo {
+    background-color: #5f2c82;
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+
+div.campo > label {
+    display: none;
+}
+
+div.campo > span {
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input {
+    background-color:#94cfcd;
+    font-size: 1em;
+    width: 80%;
+    width: calc(100%-40px);
+    transform: translatey(-10px);
+    height: 89%;
+    border: 0px;
+    border-radius: 5px;
+    padding: 4px;
+}
+
+div.campo > input:focus-within {
+    background-color: white;
+}
+
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #49a09d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+form > input[type=submit]:hover {
+    background-color: #306866;
+}
+
+form > a {
+   display: block;
+   text-align: center;
+   text-decoration: none;
+   font-size: 1em;
+   width: 100%;
+   height: 40px;
+   padding-top: 5px;
+   margin-top: 5px;
+   background-color: white;
+   color: #2d6462;
+   border: 1px solid #49a09d;
+   border-radius: 5px;
+   text-decoration: none;
+}
+
+form > a:hover {
+    background-color: #49a09d;
 }
